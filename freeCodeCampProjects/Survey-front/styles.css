@@ -1,0 +1,153 @@
+/* for sure I could have grouped it more optimally  */
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+    /* position: relative; */
+    /* border: none; */
+}
+
+/* ::before */
+#background-image {
+    background: url(./res/survey_bg.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.1);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+
+    /* opacity: 0.5;
+    z-index: -1;
+    content: " ";
+    top: 0;
+    left: 0; */
+
+    /* display: block;
+    margin: 0px; */
+}
+
+form {
+    background-color: rgb(67, 64, 64);
+    padding: 15px;
+    width: 50vh;
+    max-width: 500px;
+    margin: 0 auto;
+    border-color: yellow;
+    border-style: solid;
+    border-radius: 20px;
+    /* background-color: rgba(255, 255, 255, 0);
+    background-blend-mode: overlay; */
+}
+
+#description {
+    font-style: italic;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding: 0.5em;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 6px;
+    background-color: rgb(48, 46, 46);
+    color: white;
+}
+
+::placeholder {
+    color: grey;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="number"]:hover,
+select:hover,
+textarea:hover {
+    background-color: rgb(62, 60, 60);
+}
+
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+textarea:focus,
+select:focus {
+    outline: 2px solid #FFCC00;
+    box-shadow: 0 0 10px #FFCC00;
+}
+
+input[type="checkbox"]:checked,
+input[type="radio"]:checked {
+    accent-color: #FFCC00;
+    box-shadow: 0 0 5px #FFCC00;
+}
+
+
+
+textarea {
+    display: block;
+    padding: 5px;
+    width: 100%;
+}
+
+
+fieldset {
+    border: none;
+    margin-bottom: 10px;
+}
+
+label,
+legend {
+    display: block;
+    color: white;
+    margin-top: 5px;
+}
+
+
+/* margin: 0 50%; */
+
+
+select {
+    font-family: monospace;
+    font-size: 1em;
+    color: grey
+}
+
+.titles {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+button {
+    margin: 0 auto;
+    display: block;
+    width: 40%;
+    height: 3em;
+    background-color: yellow;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: black;
+    color: black;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+.heading {
+    text-align: center;
+    color: white;
+    margin: 50px;
+    font-size: 1.3rem;
+}
+
+
+
+/* TODO: custom dropdown */
